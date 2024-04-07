@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Presentation</title>
+        <link href="master.css" rel="stylesheet" />
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <main>
+            <section id="slide_00">
+                <div class="topic-name">Animation</div>
+                <div class="details">
+                    <span class="_detail_name">Name:</span><span class="_detail_content">Rahul Chauhan</span><br>
+                    <span class="_detail_name">Roll No:</span><span class="_detail_content">202210101310142</span><br>
+                    <span class="_detail_name">Course:</span><span class="_detail_content">BCA - 4C</span><br>
+                    <span class="_detail_name">Submitted To:</span><span class="_detail_content">Nitya Nand</span><br>
+                </div>
+            </section>
+            <section id="slide_01">
+                <div class="heading">Table of content</div>
+                <div class="table">
+                    <ul>
+                        <li>Introduction to Animation</li>
+                        <li>Basic Animation Properties</li>
+                        <li>Keyframe Animation</li>
+                        <li>Transition Animation</li>
+                        <li>Easing Function</li>
+                        <li>What is Bezier Curve</li>
+                        <li>Creating Custom Easing Function</li>
+                        <li>Responsive CSS Animation</li>
+                        <li>Summary</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="slide_02">
+                <div class="heading">Introduction to Animation</div>
+                <div class="card f-left">
+                    <div class="card-heading">CSS Animation</div>
+                    <div class="card-body">
+                        CSS is a styling tool that lets you add styling to your website,
+                        well CSS Animation lets you add motion to you website, which can make any website beautiful if done properly.
+                        <br>
+                        <br>
+                        CSS Animation, is easy to create and it does not even require any "JavaScript" to work.
+                    </div>
+                </div>
+
+                <div class="rotating-animation f-right">
+                </div>
+            </section>
+            <section id="slide_03">
+                <div class="heading">Basic Animation Properties</div>
+                <div class="card f-left">
+                    <div class="card-heading">animation: rot 2s infinite ease;</div>
+                    <div class="card-body">
+                        <p class="prop-text"><b>animation-name: </b> specifies name for animation.</p><br>
+                        <p class="prop-text"><b>animation-duration: </b> specifies how long it'll take to complete entire animation.</p><br>
+                        <p class="prop-text"><b>animation-timing-function: </b> `ease`, `linear`, they are timing function to interpolate between start and end of the frame.</p>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="rotX-animation f-right"></div>
+            </section>
+            <section id="slide_04">
+                <div class="heading">Keyframe Animation</div>
+                <div class="card f-left">
+                    <div class="card-heading">@keyframe ripple</div>
+                    <div class="card-body">
+                        Keyframe allows us to create complex animation, because it lets us change the animation throught the timeline.
+                        <br>
+                        <br>
+                        Either, we can use `from - to` property to transition, or use `n%` property to pin-point the frame.
+                    </div>
+                </div>
+
+                <div class="ripple-animation f-right"></div>
+            </section>
+            <section id="slide_05">
+                <div class="heading">Transition Animation</div>
+                <div class="card f-left">
+                    <div class="card-heading">transition: font-size 2s;</div>
+                    <div class="card-body">
+                        Transition animation, creates a timeline from where an object start and end.
+                        <br>
+                        <br>
+                        However, it is different from keyframe animation, which lets us change each indvidual frame of the animation, with different properties.
+                    </div>
+                </div>
+
+                <div class="fsize-animation f-right">CSS Animation</div>
+            </section>
+            <section id="slide_06">
+                <div class="heading">Easing Function</div>
+                <div class="card f-left">
+                    <div class="card-heading">animation-timing-function: ease;</div>
+                    <div class="card-body">
+                        Timing Function, property sets how an animation progresses through the duration of each cycle.
+                        <br>
+                        <br>
+                        It creates a curve on how much it needs to accelerate.
+                        <br>
+                        <b>ease</b>: slows down as it gets to the end.<br>
+                        <b>linear</b>: it has same speed from starting to end.
+                    </div>
+                </div>
+
+                <div class="fall-down-animation f-right">
+                    <span>H</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>!</span>
+                </div>
+            </section>
+
+            <section id="slide_07">
+                <div class="heading">What is Bezier Curve?</div>
+                <div class="card f-left">
+                    <div class="card-heading">Curve with anti-aliasing</div>
+                    <div class="card-body">
+                        A Bezier curve is a mathematical curve that is widely used in computer graphics, animation, and design. 
+                        <br>
+                        Bezier curves are defined by control points that determine the shape and trajectory of the curve. The curve starts at the first control point, ends at the last control point, and is influenced by intermediate control points. 
+                    </div>
+                </div>
+
+                <div class="bezier-curve-animation f-right"></div>
+            </section>
+
+            <section id="slide_08">
+                <div class="heading">Creating Custom Easing Function</div>
+                <div class="card f-left">
+                    <div class="card-heading">animation-timing-function: cubic-bezier(p1, p2, p3, p4);</div>
+                    <div class="card-body">
+                        Timing Function, property sets how an animation progresses through the duration of each cycle.
+                        <br>
+                        <br>
+                        It creates a curve on how much it needs to accelerate.
+                        <br>
+                        <b>ease</b>: slows down as it gets to the end.<br>
+                        <b>linear</b>: it has same speed from starting to end.
+                    </div>
+                </div>
+
+                <div class="cbez-animation f-right"></div>
+            </section>
+
+            <section id="slide_09">
+                <div class="heading">Responsive CSS Animation</div>
+                <div class="card f-left">
+                    <div class="card-heading">@media screen and (min-width: 480px)</div>
+                    <div class="card-body">
+                        Media query, makes website easy to port on different devices with different screen sizes; because we can have set of things for one screen size and another of things for another screen size.
+                        <br>
+                        It has different properties to work with, like `screen`, `oreintation`, `print`, and different size property.
+                    </div>
+                </div>
+
+                <div class="res-animation f-right">
+                    <span>H</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>!</span>
+                </div>
+            </section>
+
+            <section id="slide_010">
+                <div class="heading">Summary</div>
+                <div class="card f-left">
+                    <div class="card-heading">animation-timing-function: ease;</div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </section>
+
+            <section id="slide_011">
+                <div class="heading">Thank You!</div>
+            </section>
+        </main>
+    </body>
+</html>

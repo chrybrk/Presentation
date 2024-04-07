@@ -1,0 +1,327 @@
+:root {
+    --primary: rgb(169, 204, 227);
+    --secondry: rgb(180, 228, 170);
+    --tirtiary: rgb(0, 0, 0);
+    --text-lg-pr: rgb(0, 0, 0);
+    --text-lg-sd: rgb(89, 70, 120);
+    --fsize: 24px;
+    --ffamily: monospace;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--fsize);
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(45deg, var(--primary), var(--secondry)) fixed no-repeat;
+}
+
+section {
+    height: 100vh;
+}
+
+.topic-name {
+    margin: 10% 0px 13% 0px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--ffamily);
+    font-weight: bolder;
+    background: -webkit-linear-gradient(45deg, var(--text-lg-pr), var(--text-lg-sd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details {
+    margin-left: 30%;
+    text-align: justify;
+    max-width: 40%;
+    font-size: 1rem;
+    font-family: var(--ffamily);
+}
+
+._detail_name {
+    float: left;
+    font-weight: bolder;
+}
+
+._detail_content {
+    float: right;
+}
+
+.heading {
+    margin: 5% 0px 8% 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--ffamily);
+    font-weight: bolder;
+    background: -webkit-linear-gradient(45deg, var(--text-lg-pr), var(--text-lg-sd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style-type: "- [ ] ";
+}
+
+.table {
+    margin-left: 35%;
+    text-align: justify;
+    max-width: 40%;
+    font-size: 1rem;
+    font-family: var(--ffamily);
+    text-indent: 30px;
+}
+
+.f-left { float: left; }
+.f-right { float: right; }
+
+.card {
+    border-radius: 15px;
+    width: 25rem;
+    height: 15rem;
+    margin: 10px 70px 0px 70px;
+    background: linear-gradient(190deg, rgb(240, 240, 240), rgb(200, 240, 230));
+    box-shadow: 3px 2px 2px rgb(24, 24, 24, 0.2);
+}
+
+.card-heading {
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: var(--ffamily);
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: justify;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-family: var(--ffamily);
+}
+
+.rotating-animation {
+    margin: 4% 18% 0px 0px;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    -webkit-animation: squareToCircle 2s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+      border-radius: 0 0 0 0;
+      background: coral;
+      transform: rotate(0deg);
+    }
+    25% {
+      border-radius: 50% 0 0 0;
+      background: darksalmon;
+      transform: rotate(45deg);
+    }
+    50% {
+      border-radius: 50% 50% 0 0;
+      background: indianred;
+      transform: rotate(90deg);
+    }
+    75% {
+      border-radius: 50% 50% 50% 0;
+      background: lightcoral;
+      transform: rotate(135deg);
+    }
+    100% {
+      border-radius: 50% 50% 50% 50%;
+      background: darksalmon;
+      transform: rotate(180deg);
+    }
+}
+
+.prop-text , .prop-text > b{
+    font-family: var(--ffamily);
+    font-size: 0.8rem;
+}
+
+.rotX-animation {
+    margin: 4% 18% 0px 0px;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    -webkit-animation: rotX 2s infinite alternate;
+}
+
+@-webkit-keyframes rotX {
+    from {
+        transform: perspective(200px) rotateX(0deg);
+        background-color: coral;
+    }
+    to {
+        transform: perspective(300px) rotateX(90deg);
+        background: indianred;
+        box-shadow: inset 20px 18px 10px black;
+    }
+}
+
+.ripple-animation {
+    margin: 4% 18% 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: coral;
+    -webkit-animation: ripple 3s infinite ease;
+}
+
+@-webkit-keyframes ripple {
+    from {
+        transform: scale(0);
+        background-color: coral;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        background-color: powderblue;
+        transform: scale(10);
+    }
+}
+
+.fsize-animation {
+    margin: 4% 18% 0px 0px;
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: font-size 2s;
+    text-align: center;
+    animation: fsize 1s infinite alternate;
+}
+
+@keyframes fsize {
+    100% {
+        font-size: 2rem;
+    }
+}
+
+.fall-down-animation {
+    margin: 4% 18% 0px 0px;
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.fall-down-animation > span {
+    position: relative;
+    font-size: 4rem;
+    top: 20px;
+    animation: fall-down .4s infinite alternate;
+}
+
+@keyframes fall-down {
+  100%{
+    top: -20px;
+  }
+}
+
+.fall-down-animation span:nth-child(2){
+    animation-delay:0.1s;
+}
+.fall-down-animation span:nth-child(3){
+    animation-delay:0.2s;
+}
+.fall-down-animation span:nth-child(4){
+    animation-delay:0.3s;
+}
+.fall-down-animation span:nth-child(5){
+    animation-delay:0.4s;
+}
+
+
+.bezier-curve-animation {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: coral;
+    animation-name: move1, move2;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+  to { transform: translateX(-3000px); }
+}
+@keyframes move2 {
+  to { transform: translateY(900px); }
+}
+
+.cbez-animation {
+    margin: 4% 25% 0px 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: coral;
+    animation: cbez 5s infinite alternate cubic-bezier(0.1, 0.3, 0.2, 0.8);
+}
+
+@keyframes cbez {
+    20% {
+        transform: translateY(200px);
+    }
+    40% {
+        transform: translateY(100px);
+    }
+    60% {
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
+
+.res-animation {
+    margin: 4% 18% 0px 0px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: transparent;
+    text-align: center;
+    animation: cbez 5s infinite alternate ease;
+}
+
+.res-animation > span {
+    position: relative;
+    font-size: 4rem;
+    top: 20px;
+    animation: res .4s infinite alternate;
+}
+
+.res-animation span:nth-child(2){
+    animation-delay:0.3s;
+}
+.res-animation span:nth-child(3){
+    animation-delay:0.2s;
+}
+.res-animation span:nth-child(4){
+    animation-delay:0.4s;
+}
+.res-animation span:nth-child(5){
+    animation-delay:0.2s;
+}
+
+@keyframes res {
+    from {
+        top: 20px;
+        color: powderblue;
+        opacity: 0;
+    }
+    to {
+        top: -40px;
+        color: coral;
+    }
+}
