@@ -325,3 +325,10 @@ ul {
         color: coral;
     }
 }
+
+.center-word {
+    margin: 10rem auto;
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--ffamily);
+}
